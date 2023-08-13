@@ -1,10 +1,13 @@
 ## Note: Even though this version retains all the logic from the original repository, always adhere to the "zero trust" principle and use this release at your own risk. We are *not* responsible for any malfunctions and potential damage. However, we guarantee on our part that this version preserves 100% of the original code, except for the adjustment of the fee from 1000 to 10000 zat.
 
-Note: You have the flexibility to adjust the transaction fee as per your needs. To do this:
+ You have the flexibility to adjust the transaction fee as per your needs. To do this:
 
-    Clone the following three repositories into a single directory: [zecwallet-lite](https://github.com/kattywood/zecwallet-lite), [zecwallet-light-cli](https://github.com/kattywood/zecwallet-light-cli), and [librustzcash](https://github.com/kattywood/librustzcash).
-    Navigate to librustzcash\zcash_primitives\src\transaction\components\amount.rs and on line 10, modify the value from "10000" to your preferred amount in the line pub const DEFAULT_FEE: Amount = Amount(10000).
-    Once the changes are made, you can then compile the project using the source code.
+Clone the following three repositories into a single directory: [zecwallet-lite](https://github.com/kattywood/zecwallet-lite), [zecwallet-light-cli](https://github.com/kattywood/zecwallet-light-cli), and [librustzcash](https://github.com/kattywood/librustzcash).
+
+Navigate to librustzcash\zcash_primitives\src\transaction\components\amount.rs and on line 10, modify the value from "10000" to your preferred amount in the line
+* pub const DEFAULT_FEE: Amount = Amount(10000).
+
+Once the changes are made, you can then compile the project using the source code.
 	
  # Zcash Rust crates
 
